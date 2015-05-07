@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr" ng-app>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cave à vin</title>
+    </head>
+<body>
+<div ng-controller="MainCtrl" class="container">
+
+	<div class="jumbotron">
+		<h1>{{title}}</h1>
+		<p>{{longdescription}}</p>
+	</div>
+    <input type="text" ng-model="name" placeholder="Recherche de vin">
+    <p>Le vin est du {{name}}</p>
+</div>
+<script src="StaticFiles\js/cave.js"></script>
+<script src="StaticFiles\js/lib/angular.min.js"></script>
+<script src="StaticFiles\js/lib/jquery.min.js"></script>
+<script src="StaticFiles\js/lib/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</body>
+</html>
